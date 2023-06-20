@@ -1,0 +1,52 @@
+.button {
+    width: 218px;
+    height: 47px;
+    position: relative;
+    background-color: #7469F3;
+    border-radius: 6px;
+    font-size: 18px;
+    font-weight: 500;
+    font-family: 'Roboto';
+    color: #FFFFFF;
+    border: none;
+}
+.disabled {
+    position: relative;
+    background-color: grey;
+    width: 218px;
+    height: 47px;
+    border-radius: 6px;
+    font-size: 18px;
+    font-weight: 500;
+    border: none;
+    pointer-events: none;
+}
+
+button:before {
+	content:'';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 0;
+	height: 47px;
+	background: rgba(255,255,255,0.3);
+	border-radius: 5px;
+	transition: all 1s ease;
+}
+button:hover:before {
+	width: 100%;
+}
+button:hover {
+    cursor: pointer;
+}
+button:active {
+    box-shadow: 5px 5px 10px lightblue;
+    transform: 0.5s;
+}
+
+/* Media */
+@media screen and (max-width:425px){
+    .button_wrapper {
+      margin-bottom: 20px;
+    }
+}

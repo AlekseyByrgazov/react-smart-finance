@@ -1,0 +1,36 @@
+
+.input_wrapper{
+    display: flex;
+    flex-direction: column-reverse;
+    width: 385px;
+    margin: 0 auto;
+  }
+  
+  input {
+    padding-left: 15px;
+    margin-bottom: 24px;
+    height: 50px;
+    border: 2px solid #7469F3;
+    border-radius: 6px;
+    font-size: 16px;
+    outline: none;  
+  }
+  
+  label {
+    font-size: 18px;
+    padding-left: 1rem;
+    color: #BABABA;
+    transform: translateY(2.2rem);
+    transform-origin: left top;
+    cursor: text;
+    transition: all 0.3s;
+  }
+  
+  
+  input:focus ~ label,
+  input:not(:placeholder-shown) ~ label {
+    padding: 0;
+    color: #BABABA;
+    transform: translateY(1.5rem) translateX(1rem) scale(0.7);
+  }
+

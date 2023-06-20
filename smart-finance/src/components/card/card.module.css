@@ -1,0 +1,90 @@
+.card {
+    position: relative;
+    width: 353px;
+    height: 382px;
+    border-radius: 6px;
+    transition: 0.8s;
+    background-image: url(https://s3-alpha-sig.figma.com/img/d259/8389/c9e29ef95b00386f0e362572c8d322ee?Expires=1687737600&Signature=Fb8vcMnzyh4nSxh6GbDEqhSTZOWpN16dtAjSCIev451QhsAeg2Hl0wV6TMZ1u4DEv8fF6AK7bOCRqmTNCMkdMse6ovn0SOsvtXe~n1VjJWXFIID4f9IjeoVxHgkj7XcDjE5hLmWBj9pVcOGT7uzgK15vUxrk~M-WXvDVUKJtnk4roFlOnXQSuGZ1aj9qnAqyHAXX-o6ZR6TRQnzXBbVWLR~ktdOz9HCPw3RePaoFQiOzuJ41E6d8l9t-en9BQMlJ7VVUeRf8jUolr5wPvJOftu5osqob8PEz9H5mX4wuEsEBmT6VFIHR9tjWLsGaGLJfdpmGoDoEqc2CWUy9-8SyXQ__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4);
+    background-size: cover;
+    z-index: 9;
+}
+.description {
+    position: relative;
+    padding: 15px;
+    margin-top: 72px;
+    color: aliceblue;
+    font-size: 18px;
+    font-weight: 500;
+    transition: 1.2s;
+    opacity: 0;
+}
+.card_previev {
+    position: absolute;
+    top:332px;
+    width: 100%;
+    height: 50px;
+    padding: 5px 15px;
+    border-radius: 6px;
+    background-color: #535252cc;
+    opacity: 0.8;
+    transition: all 0.5s ease-in-out;
+}
+.review_info {
+    display: flex;
+    justify-content: space-between;
+}
+.user_email {
+    color: white;
+    font-size: 18px;
+    font-weight: 700;
+    font-family: 'Roboto';
+    width: 70%;
+    word-wrap: break-word;
+}
+.points{
+    color: white;
+    font-size: 24px;
+    font-weight: 700;
+    font-family: 'Roboto';
+}
+.raiting {
+    display: flex;
+    position: relative;
+    z-index: 10 ;
+}
+.svg_wrapper {
+    position: relative;
+    margin-left: 4px;
+}
+
+/* интерактив карточки при ховере */
+
+.card:hover {
+    cursor: pointer;
+}
+.card:hover .description {
+    z-index: 10;
+    opacity: 1;
+    cursor: pointer;
+}
+.card:hover .card_previev {
+    transform: translateY(-332px);
+    height: 382px;
+}
+.button_card {
+    position: absolute;
+    top:320px;
+    left: 15px;
+    opacity: 0;
+    transition: 0.6s;
+}
+.button_card:active {
+    box-shadow: 5px 5px 10px lightblue;
+    transform: 0.5s;
+}
+.card:hover .button_card {
+    opacity: 1;
+}
+
+
+
